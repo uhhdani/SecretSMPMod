@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "secretsmpmod",
+	"version": "${version}",
+	"name": "SecretSMPMod",
+	"description": "A fabric mod made by uhhdani for the Secret SMP",
+	"authors": [
+		"uhhdani"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/secretsmpmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.uhhdani.secretsmpmod.SecretSMPMod"
+		],
+		"client": [
+			"net.uhhdani.secretsmpmod.SecretSMPModClient"
+		],
+		"fabric-datagen": [
+			"net.uhhdani.secretsmpmod.SecretSMPModDataGenerator"
+		]
+	},
+	"mixins": [
+		"secretsmpmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
